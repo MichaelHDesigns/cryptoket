@@ -40,7 +40,7 @@ contract NFTMarketplace is
         bool sold
     );
 
-    constructor() ERC721("CryptoKet NFT", "CKNFT") {}
+    constructor() ERC721("ALT NFT", "ANFT") {}
 
     /* Updates the listing price of the contract */
     function updateListingPrice(uint256 _listingPrice)
