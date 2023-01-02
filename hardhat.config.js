@@ -1,4 +1,5 @@
  const fs = require('fs');
+require('dotenv').config()
 
 require('@nomiclabs/hardhat-waffle');
 
@@ -15,7 +16,7 @@ module.exports = {
   //   },
      goerli: {
        url: 'https://rpc0.altcoinchain.org/rpc',
-      accounts: [privateKey],
+      accounts: [process.env.WALLET_PRIVATE_KEY.toString()],
      },
   },
   solidity: '0.8.4',
